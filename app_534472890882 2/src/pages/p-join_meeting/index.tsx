@@ -15,7 +15,7 @@ const JoinMeetingPage: React.FC = () => {
   // 设置页面标题
   useEffect(() => {
     const originalTitle = document.title;
-    document.title = '译会通 - 加入会议';
+    document.title = '全球语-会译通 - 加入会议';
     return () => { document.title = originalTitle; };
   }, []);
 
@@ -166,7 +166,7 @@ const JoinMeetingPage: React.FC = () => {
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
               <i className="fas fa-language text-white text-lg"></i>
             </div>
-            <h1 className="text-xl font-bold text-text-primary">译会通</h1>
+            <h1 className="text-xl font-bold text-text-primary">全球语-会译通</h1>
           </div>
           
           {/* 用户信息和退出按钮 */}

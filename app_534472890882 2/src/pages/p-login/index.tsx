@@ -34,7 +34,7 @@ export default function LoginPage() {
   // 设置页面标题
   useEffect(() => {
     const originalTitle = document.title;
-    document.title = '译会通 - 登录';
+    document.title = '全球语-会译通 - 登录';
     return () => { document.title = originalTitle; };
   }, []);
 
@@ -187,7 +187,7 @@ export default function LoginPage() {
               <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-card">
                 <i className="fas fa-language text-primary text-3xl"></i>
               </div>
-              <h1 className="text-4xl font-bold text-white mb-4">译会通</h1>
+              <h1 className="text-4xl font-bold text-white mb-4">全球语-会译通</h1>
               <p className="text-lg text-white/80">实时同声传译，打破语言壁垒</p>
             </div>
 
@@ -302,7 +302,7 @@ export default function LoginPage() {
 
             {/* 页脚信息 */}
             <div className="text-center mt-8 text-white/60 text-sm">
-              <p>© 2024 译会通. 让沟通无界限</p>
+              <p>© 2024 全球语-会译通. 让沟通无界限</p>
             </div>
           </div>
         </div>
