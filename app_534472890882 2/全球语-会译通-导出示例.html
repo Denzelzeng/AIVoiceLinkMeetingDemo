@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>全球语-会译通 - 登录页导出</title>
+    <style>
+      :root {
+        --primary: #2563eb;
+        --secondary: #1e40af;
+        --text-primary: #1f2937;
+        --text-secondary: #6b7280;
+        --border-light: #e5e7eb;
+        --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+        background: var(--bg-gradient);
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 420px;
+      }
+
+      .brand {
+        text-align: center;
+        margin-bottom: 24px;
+        color: #fff;
+      }
+
+      .logo {
+        width: 72px;
+        height: 72px;
+        margin: 0 auto 14px;
+        border-radius: 18px;
+        background: #fff;
+        color: var(--primary);
+        display: grid;
+        place-items: center;
+        font-size: 30px;
+        font-weight: 700;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+      }
+
+      .brand h1 {
+        margin: 0 0 8px;
+        font-size: 34px;
+        line-height: 1.2;
+      }
+
+      .brand p {
+        margin: 0;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 28px;
+        box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18);
+      }
+
+      .card h2 {
+        margin: 0 0 18px;
+        color: var(--text-primary);
+        text-align: center;
+        font-size: 24px;
+      }
+
+      .field {
+        margin-bottom: 14px;
+      }
+
+      .field label {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--text-primary);
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .field input {
+        width: 100%;
+        height: 46px;
+        border: 1px solid var(--border-light);
+        border-radius: 12px;
+        padding: 0 14px;
+        font-size: 14px;
+        color: var(--text-primary);
+        outline: none;
+      }
+
+      .field input:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+      }
+
+      .btn {
+        width: 100%;
+        height: 46px;
+        border: 0;
+        border-radius: 12px;
+        background: var(--primary);
+        color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        margin-top: 8px;
+        box-shadow: 0 6px 18px rgba(37, 99, 235, 0.3);
+      }
+
+      .btn:hover { background: var(--secondary); }
+
+      .features {
+        margin-top: 18px;
+        padding-top: 14px;
+        border-top: 1px solid var(--border-light);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        text-align: center;
+        font-size: 12px;
+        color: var(--text-secondary);
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 16px;
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 12px;
+      }
+
+      @media (max-width: 420px) {
+        .brand h1 { font-size: 30px; }
+        .card { padding: 22px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="brand">
+        <div class="logo">语</div>
+        <h1>全球语-会译通</h1>
+        <p>实时同声传译，打破语言壁垒</p>
+      </div>
+
+      <section class="card">
+        <h2>欢迎使用</h2>
+        <form>
+          <div class="field">
+            <label for="email">邮箱地址</label>
+            <input id="email" type="email" placeholder="请输入您的邮箱地址" />
+          </div>
+          <div class="field">
+            <label for="name">您的姓名</label>
+            <input id="name" type="text" placeholder="请输入您的姓名" />
+          </div>
+          <button class="btn" type="button">进入</button>
+        </form>
+
+        <div class="features">
+          <div>实时翻译</div>
+          <div>高准确率</div>
+          <div>简单易用</div>
+        </div>
+      </section>
+
+      <div class="footer">© 2024 全球语-会译通. 让沟通无界限</div>
+    </div>
+  </body>
+</html>

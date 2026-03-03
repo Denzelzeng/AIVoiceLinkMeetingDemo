@@ -13,7 +13,7 @@ export default function CreateMeetingPage() {
   // 设置页面标题
   useEffect(() => {
     const originalTitle = document.title;
-    document.title = '译会通 - 会议已创建';
+    document.title = '全球语-会译通 - 会议已创建';
     return () => { document.title = originalTitle; };
   }, []);
 
@@ -141,7 +141,7 @@ export default function CreateMeetingPage() {
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
               <i className="fas fa-language text-white text-lg"></i>
             </div>
-            <h1 className="text-xl font-bold text-text-primary">译会通</h1>
+            <h1 className="text-xl font-bold text-text-primary">全球语-会译通</h1>
           </div>
           
           {/* 用户信息和退出按钮 */}
@@ -235,7 +235,7 @@ export default function CreateMeetingPage() {
               </h4>
               <div className="text-xs text-text-secondary space-y-2">
                 <p>• 告知其他参会者房间号：<span className="font-medium text-primary">{roomNumber}</span></p>
-                <p>• 参会者访问译会通并选择"加入会议"</p>
+                <p>• 参会者访问全球语-会译通并选择"加入会议"</p>
                 <p>• 输入房间号即可加入会议</p>
               </div>
             </div>
